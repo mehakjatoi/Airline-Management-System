@@ -6,18 +6,22 @@ package airlinemanagement;
 
 //import java.awt.Color;
 
-
+import java.awt.Color;
 public class AirlineManagement {
  
     
     public static void main(String[] args) {
-        // TOsplaDO code application logic here
+        
    Splash S1=new Splash();
    S1.setBounds(250,20,800,700);
-  // S1.getContentPane().setBackground(Color.blue);
-   S1.setVisible(true);
    Login login=new Login(); 
-   login.setBounds(250,20,800,700);
+   login.getContentPane().setBackground(Color.white);
+   login.setBounds(250,20,900,700);
+   //Management M1=new Management();
+ 
+   S1.setVisible(true);
+  
+   
    try{
     for(int i=0;i<=100;i++){
         Thread.sleep(60);
@@ -28,8 +32,8 @@ public class AirlineManagement {
    }
    S1.setVisible(false);
    login.setVisible(true);
-   S1.dispose();
-   
+     S1.dispose();
+  // M1.setVisible(true);
    
     }
     
