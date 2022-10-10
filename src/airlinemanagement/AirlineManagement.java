@@ -8,21 +8,15 @@ package airlinemanagement;
 
 import java.awt.Color;
 public class AirlineManagement {
- 
-    
-    public static void main(String[] args) {
-        
+public static void main(String[] args) {
    Splash S1=new Splash();
    S1.setBounds(250,20,800,700);
    Login login=new Login(); 
    login.getContentPane().setBackground(Color.white);
    login.setBounds(250,20,900,700);
    //Management M1=new Management();
- 
-   S1.setVisible(true);
-  
-   
-   try{
+    S1.setVisible(true);
+    try{
     for(int i=0;i<=100;i++){
         Thread.sleep(60);
         S1.Loading.setValue(i);
